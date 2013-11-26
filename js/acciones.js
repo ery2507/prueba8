@@ -104,7 +104,8 @@ $(document).ready(function(e)
            				  ejecutar.executeSql (SQL, [id_borrar], function ()
             			 { 
               			   alert ("Cliente Borrado");
-           				 }, error);//ejecutar
+						   navigator.notification.beep(2);
+							}, error);//ejecutar
          		      });// transaction
        			   });// swipe right 
 	          });//listado
