@@ -68,12 +68,13 @@ $(document).ready(function(e)
              		{
          	  		var fila = resultado.rows.item (i);
 					var v_nombre = fila.nombre;
+					var v_apellido=fila.apellido;
 					var v_id=fila.id;
-				     a_html += "<li data-icon=false id= >" + v_id + " >";
+				     a_html += "<li data-icon=false id=" + v_id + " >";
 					 a_html += "<a href=#>";
-					 a_html += v_nombre + "&nbsp;" + v_apellido + "</li>";
+					 a_html += v_nombre + "&nbsp;" + v_apellido;
 					  a_html += "</a>";
-					  a_html += "<\li>";
+					  a_html += "</li>";
 					 
         			}
       	   		}//if
